@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+  }
+div {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    background-color: black;
+    font-family: monospace;
+}
+
+.screen {
+    color: white;
+    text-align: right;
+    padding: 20px 5px;
+    font-size: 40px;
+}
+
+.calc-button {
+    background-color: #d8d9db;
+    color: black;
+    height: 100px; 
+    padding: 0;
+    border: 0;
+    font-size: 40px;
+    flex: 1; /* Distributes available space equally among all items */
+    flex-basis: 0; /* Helps to ensure equal distribution */
+}
+
+.calc-row {
+    display: flex;
+    gap: 2px;
+    padding: 1px;
+}
+.C {
+    flex-grow: 2;
+    padding-right: 2px;
+}
+.triple {
+    flex-grow: 3;
+    padding-right: 2px;
+}
+
+.calc-button:hover {
+    background-color: #ebebeb;
+
+}
+
+.calc-button:active {
+    background-color: #bbbcbe;
+
+}
+
+.calc-button:last-child {
+    background-color: #df974c;
+    color: white;
+
+}
+.calc-button:last-child:hover {
+    background-color: #dfb07e;
+    /* color: white; */
+
+}
+.calc-button:last-child:active {
+    background-color: #dd8d37;
+    /* color: white; */
+
+}
